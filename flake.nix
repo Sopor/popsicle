@@ -1,5 +1,5 @@
 {
-  description = "System76 Keyboard Configurator";
+  description = "Popsicle";
 
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
@@ -19,10 +19,10 @@
           version = "1.3.1";
           src = ./.;
           buildInputs =
-            (with pkgs; [ pkg-config rustc cargo help2man clang gtk3 ]);
+            (with pkgs; [ cargo help2man clang gtk3 ]);
         };
         devShell = pkgs.mkShell {
-          buildInputs = with pkgs; [ pkg-config rustc cargo help2man clang gtk3 ];
+          buildInputs = with pkgs; [ cargo help2man clang gtk3 ];
         };
         formatter = nixpkgs.legacyPackages."${system}".nixfmt;
       });
