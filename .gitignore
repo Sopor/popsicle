@@ -1,5 +1,6 @@
 .cargo/
 debian/*
+/result
 !debian/source
 !debian/changelog
 !debian/compat
