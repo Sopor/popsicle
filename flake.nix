@@ -17,7 +17,7 @@
         defaultPackage = naersk-lib.buildPackage {
           name = "popsicle";
           version = "1.3.1";
-          src = ./.;
+          src = ./cli/.;
           buildInputs =
             (with pkgs; [ cargo help2man clang gtk3 ]);
         };
